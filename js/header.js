@@ -142,12 +142,12 @@ template.innerHTML = `
 <header class="header">
     <div class="logo">
         <img src="../img/logo.png"></img>
-        <a href="/home">Vital Suplementos</a>        
+        <a href="/index.html">Vital Suplementos</a>        
     </div>
 
     <nav class="main-nav">
         <ul>
-            <li><a href="/visao geral">Visão Geral</a></li>
+            <li><a href="/index.html">Visão Geral</a></li>
             <li><a href="/indicacao">Loja</a></li>
             <li><a href="/perfil">Indique e ganhe</a></li>
             <li><a href="/logout">Perfil</a></li>
