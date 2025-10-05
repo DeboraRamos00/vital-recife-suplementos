@@ -1,5 +1,9 @@
 /* --- ESTILOS DO CONTAINER PRINCIPAL --- */
-
+.form-banner {
+    background-image: url("/img/imagem\ de\ fundo\ cadastro.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* Centraliza o bloco de formulário na tela vertical e horizontalmente */
 .form-block {
     display: flex;
