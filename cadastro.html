@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <title>Vital Suplementos</title>
+</head>
+<body>
+    <app-header></app-header>
+    <main>
+      <section class="form-block">
+        <form action="" class="form">
+          <h2>Cadastro</h2>
+          <div class="input-group">
+              <label for="nome">Nome:</label>
+              <input type="nome" id="nome" placeholder="Digite aqui seu nome" required>
+          </div>
+          <div class="input-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" placeholder="Digite aqui seu email" required>
+          </div>
+          <div class="input-group">
+              <label for="telefone">Telefone</label>
+              <input type="number" id="telefone" placeholder="Digite seu número" maxlength="11">
+          </div>
+          <div class="input-group">
+              <label for="senha">Senha:</label>
+              <input type="password" name="senha" id="senha" placeholder="Digite aqui sua senha" required>
+          </div>
+          <div class="input-group">
+              <label for="confirme-senha">Confirme sua senha:</label>
+              <input type="password" name="confirme-senha" id="confirme-senha" placeholder="As senhas precisam estar iguais" required>
+          </div>
+          <button type="submit">Cadastre-se</button>
+        </form>
+      </section>
+    </main>
+    <app-footer></app-footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/header.js" type="module"></script>
+    <script src="./js/footer.js" type="module"></script>
+</body>
+</html>
