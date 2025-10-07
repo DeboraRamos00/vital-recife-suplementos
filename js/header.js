@@ -150,7 +150,7 @@ template.innerHTML = `
             <li><a href="/index.html">Visão Geral</a></li>
             <li><a href="/indicacao">Loja</a></li>
             <li><a href="/perfil">Indique e ganhe</a></li>
-            <li><a href="/logout">Perfil</a></li>
+            <li><a href="/perfil.html">Perfil</a></li>
         </ul>
     </nav>
 
