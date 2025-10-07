@@ -7,8 +7,9 @@ template.innerHTML = `
         display: flex;
         justify-content: space-between;
         align-items: center; 
-        padding: 1.5rem 3rem; 
+        padding: 1.5rem; 
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        height: 5vh;
     }
 
     .logo {
