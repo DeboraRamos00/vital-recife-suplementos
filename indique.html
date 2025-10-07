@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/indique.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Vital Suplementos | Indique e Ganhe</title>
+</head>
+<body>
+    <app-header></app-header>
+
+    <main class="indica-banner-container">
+      <section class="painel-wrapper"> 
+        
+        <div class="painel-controle"> 
+            
+            <h2 class="painel-titulo">INDIQUE E GANHE!</h2>
+            <p class="nome-destaque">Olá, <span id="nome-parceiro">João Silva</span>!</p>
+            <p class="painel-instrucao">Seu painel de parceiro.</p>
+
+            <div class="painel-conteudo-grid">
+                
+                <div class="coluna-esquerda">
+                    
+                    <div class="link-bloco">
+                        <h3>🔗 SEU LINK EXCLUSIVO</h3>
+                        <div class="input-group-link">
+                            <input type="text" id="link-indicacao" readonly value="https://vitalsuplementos.com/indica/JOAO_S123">
+                            <button class="btn-copiar-link" type="button">COPIAR LINK</button>
+                        </div>
+                    </div>
+
+                    <div class="qrcode-bloco">
+                        <h3>📱 COMPARTILHE VIA QR</h3>
+                        <div class="qrcode-placeholder">
+                            <p>QR Code</p>
+                        </div>
+                        <p class="qrcode-info">Aponte a câmera para compartilhar seu link!</p>
+                    </div>
+
+                    <div class="metricas-vertical">
+                        <h3>📊 RELATÓRIO DE DESEMPENHO</h3>
+                        
+                        <div class="metrica-item">
+                            <span class="metrica-label">Clientes Indicados c/ Compra:</span>
+                            <span class="metrica-valor">25</span>
+                        </div>
+                        
+                        <div class="metrica-item metrica-destaque">
+                            <span class="metrica-label">Receita Gerada:</span>
+                            <span class="metrica-valor">R$ 3.150</span>
+                        </div>
+                        
+                    </div>
+                </div> 
+                
+                <div class="conquistas-lista">
+                    <h3>💎 SUAS PROGRESSÕES E PRÊMIOS</h3>
+
+                    <div class="conquista-item conquista-ativa">
+                        <div class="conquista-info">
+                            <div class="conquista-texto"> 
+                                <h4>Parceiro Bronze</h4> 
+                                <p>Prêmio: Cupom de **10% OFF em TODO o site** para você!</p>
+                            </div>
+                            <button class="btn-resgatar btn-acao" type="button">RESGATAR</button>
+                        </div>
+                    </div>
+                        
+                    <div class="conquista-item conquista-progresso">
+                        <div class="conquista-info">
+                            <div class="conquista-texto">
+                                <h4>Parceiro Prata</h4> 
+                                <p>Prêmio: **3 Meses de Suplementos GRÁTIS** e 20% OFF para sua base!</p>
+                            </div>
+                            <button class="btn-resgatar btn-progresso" disabled type="button">FALTAM R$ 1.850</button>
+                        </div>
+                        <div class="progresso-barra-pequena"><span class="progresso-status" style="width: 63%;">63%</span></div>
+                    </div>
+
+                    <div class="conquista-item conquista-progresso">
+                        <div class="conquista-info">
+                            <div class="conquista-texto">
+                                <h4>Parceiro Ouro</h4> 
+                                <p>Prêmio: **iPhone NOVO, Patrocínio Integral** e Lançamentos Exclusivos!</p>
+                            </div>
+                            <button class="btn-resgatar btn-progresso" disabled type="button">FALTAM R$ 6.850</button>
+                        </div>
+                        <div class="progresso-barra-pequena"><span class="progresso-status" style="width: 31%;">31%</span></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+      </section>
+    </main>
+    <app-footer></app-footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/header.js" type="module"></script>
+    <script src="./js/footer.js" type="module"></script>
+</body>
+</html>

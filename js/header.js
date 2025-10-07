@@ -148,8 +148,8 @@ template.innerHTML = `
     <nav class="main-nav">
         <ul>
             <li><a href="/index.html">Visão Geral</a></li>
-            <li><a href="/indicacao">Loja</a></li>
-            <li><a href="/perfil">Indique e ganhe</a></li>
+            <li><a href="/loja.html">Loja</a></li>
+            <li><a href="/indique.html">Indique e ganhe</a></li>
             <li><a href="/perfil.html">Perfil</a></li>
         </ul>
     </nav>
