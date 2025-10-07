@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/form-perfil.css">
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <title>Meu Perfil</title>
+</head>
+
+<body>
+  <app-header></app-header>
+
+  <main class="form-block">
+    <section class="perfil-card">
+      <div class="perfil-header">
+        <img src="./img" alt="Foto de perfil" class="perfil-foto" />
+        <h2>Bem-vindo, <span id="nome-usuario"> xx! </span></h2>
+        <p>Membro desde: <span id="ano-membro"> xx </span></p>
+      </div>
+
+      <div class="perfil-info">
+        <h3>Informações pessoais</h3>
+        <ul>
+          <li><strong>Nome completo: </strong><span id="nome"> xx </span></li>
+          <li><strong>Email: </strong><span id="email"> xx </span></li>
+          <li><strong>Plano: </strong> Vital Premium</li>
+        </ul>
+      </div>
+
+      <div class="perfil-acoes">
+        <button class="btn-editar">Editar Perfil</button>
+        <button class="btn-sair"><a href="/index.html">Sair</a></button>
+      </div>
+    </section>
+  </main>
+
+  <app-footer></app-footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/header.js" type="module"></script>
+    <script src="./js/footer.js" type="module"></script>
+</body>
+</html>
