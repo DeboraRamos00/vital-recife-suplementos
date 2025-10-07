@@ -1,0 +1,317 @@
+/* --- CONTAINER E FUNDO --- (Mantido) */
+.indica-banner-container {
+    background-image: url("/img/imagem\ de\ fundo\ cadastro.svg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px 0;
+}
+
+.painel-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.painel-controle {
+    background-color: #2c2c2c; 
+    padding: 15px 40px 30px 40px; 
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 900px;
+    text-align: left;
+}
+
+/* --- TÍTULOS E SAUDAÇÃO (Mantido) --- */
+.painel-titulo {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+
+.nome-destaque {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 10px; 
+    display: block;
+}
+#nome-parceiro {
+    color: var(--text-color-light); 
+}
+
+.painel-instrucao {
+    display: none; 
+}
+
+/* --- LAYOUT DE DUAS COLUNAS --- */
+.painel-conteudo-grid {
+    display: flex;
+    gap: 40px; 
+}
+
+.coluna-esquerda {
+    flex-basis: 45%; 
+    flex-shrink: 0;
+    /* CORREÇÃO: Força o conteúdo da coluna a se empilhar verticalmente */
+    display: flex; 
+    flex-direction: column; 
+}
+
+.coluna-direita {
+    flex-basis: 55%; 
+    flex-grow: 1;
+}
+
+/* Títulos de Seção (SEU LINK, RELATÓRIO) */
+.link-bloco h3, .metricas-vertical h3, .conquistas-lista h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #3a3a3a; 
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* --- CORREÇÃO: ESTILO DO LINK DE CÓPIA E BOTÃO --- */
+.input-group-link {
+    display: flex; /* Mantém input e botão lado a lado */
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+#link-indicacao {
+    flex-grow: 1;
+    border: none;
+    background-color: #3a3a3a; 
+    color: var(--text-color-light); 
+    padding: 10px 12px;
+    font-size: 1rem;
+}
+
+.btn-copiar-link {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 12px 20px; 
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    flex-shrink: 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+.btn-copiar-link:hover {
+    background-color: #afff00;
+}
+
+/* --- ESTILO DO QR CODE --- */
+.qrcode-bloco {
+    /* CORREÇÃO: Define o bloco do QR para ser um container interno que empilha o conteúdo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.qrcode-bloco h3 {
+    /* CORREÇÃO: Remove a margem superior excessiva */
+    margin-top: 0;
+    color: var(--text-color-light); 
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #3a3a3a; 
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.qrcode-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: var(--text-color-light);
+    margin: 0 auto 10px auto;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444;
+    font-size: 0.9rem;
+}
+
+.qrcode-info {
+    color: #ccc; 
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+/* --- ESTILO DAS MÉTRICAS --- */
+.metricas-vertical {
+    /* CORREÇÃO: Adiciona espaçamento vertical entre blocos */
+    margin-top: 20px;
+}
+.metricas-vertical h3 {
+    margin-top: 0; 
+}
+.metrica-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #3a3a3a;
+    color: #ccc;
+    font-family: "Oswald", sans-serif;
+}
+.metrica-destaque .metrica-valor {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* --- ESTILO DAS CONQUISTAS E BOTÕES --- (Mantido e Corrigido) */
+.conquistas-lista {
+    margin-bottom: 0;
+}
+
+.conquista-item {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin-bottom: 12px;
+    background-color: #333; 
+    border-radius: 6px;
+    border-left: 4px solid #555;
+}
+
+.conquista-ativa {
+    border-left-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(204, 255, 0, 0.4);
+}
+
+.conquista-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /* Alinha o texto no topo */
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+.conquista-info h4 {
+    color: var(--text-color-light);
+    font-size: 1.1rem;
+    margin: 0;
+    flex-shrink: 0; 
+    margin-right: 15px;
+}
+.conquista-info p {
+    font-size: 0.85rem;
+    color: #ccc;
+    font-family: "Oswald", sans-serif;
+    margin-right: 15px;
+}
+
+.btn-acao, .btn-progresso {
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    padding: 8px 15px; 
+    border-radius: 4px;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.btn-resgatar {
+    font-family: "Oswald", sans-serif;
+    width: 33%;
+}
+
+.btn-acao {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+}
+.btn-progresso:disabled {
+    background-color: #555;
+    color: var(--text-color-light);
+    cursor: not-allowed;
+    padding: 8px 15px; 
+    font-size: 0.85rem; 
+}
+
+.progresso-barra-e-botao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.progresso-barra-pequena {
+    background-color: #3a3a3a; 
+    border-radius: 50px;
+    height: 10px;
+    flex-grow: 1; /* Força a barra a ocupar o espaço que o botão não ocupa */
+    margin-right: 15px; 
+    overflow: hidden;
+}
+
+.progresso-status {
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    height: 100%;
+    text-align: right; 
+    font-size: 8px;
+    line-height: 10px;
+    padding-right: 5px;
+    font-weight: 700;
+    border-radius: 50px;
+}
+
+/* --- RESPONSIVIDADE (Mantida) --- */
+@media (max-width: 950px) {
+    .painel-controle {
+        max-width: 95%;
+    }
+    .painel-conteudo-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .painel-controle {
+        padding: 15px 20px 20px 20px;
+    }
+    .painel-titulo {
+        font-size: 2rem;
+    }
+    .input-group-link {
+        flex-direction: column;
+    }
+    .btn-copiar-link {
+        border-radius: 0 0 6px 6px;
+        margin-top: -2px;
+    }
+    .input-group-link input {
+        border-radius: 6px 6px 0 0;
+    }
+}
