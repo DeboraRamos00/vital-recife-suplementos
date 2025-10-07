@@ -8,7 +8,7 @@ template.innerHTML = `
     justify-content: center;
     align-items: flex-start;
     gap: 15rem;
-    padding: 2rem 0 5rem;
+    padding: 2rem;
     border-top: 3px solid var(--primary-color, #ccff00);
     position: relative;
     font-family: "Oswald", sans-serif;

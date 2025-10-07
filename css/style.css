@@ -28,7 +28,8 @@ main {
     max-width: 100%;
 }
 
-.banner {
-    object-fit: cover;
-    align-self: center;
+.index-banner {
+    background-image: url("../img/Compre\ bem\,\ Viva\ bem.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
