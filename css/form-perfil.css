@@ -21,6 +21,7 @@ body {
     margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba(204, 255, 0, 0.25);
 }
 
 .perfil-foto {
@@ -94,8 +95,8 @@ body {
 
 }
 .btn-editar:hover{
-    background-color: #afff00; /* Levemente mais claro */
-    transform: translateY(-2px); /* Efeito 3D sutil */
+    background-color: #afff00;
+    transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(204, 255, 0, 0.3);
 }
 
