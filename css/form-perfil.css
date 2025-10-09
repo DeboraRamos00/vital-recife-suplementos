@@ -121,9 +121,13 @@ body {
   transform: translateY(-2px);
 }
 
-.btn-sair a {
+.btn-sair a, .btn-editar a {
   color: var(--text-color-light);
   text-decoration: none;
+}
+
+.btn-editar a {
+  color: #333;
 }
 
 @media (max-width: 768px) {
